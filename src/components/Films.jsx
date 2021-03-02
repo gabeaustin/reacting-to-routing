@@ -13,20 +13,28 @@ const Films = () => {
 
     return (
         <main className="container">
-            <section className="row mt-3">
-                <div className="col-12">
+            <section className="row mt-5 mb-5">
+                <div className="col-md-3"></div>
+                <div className="col-md-6">
                     <h1 className="text-center">Films</h1>
-                </div>
 
-                <ul className="list-group">
-                    {films.map(film => (
-                        <li key={`user-item-${film.id}`}
-                            className="list-group-item d-flex justify-content-between align-items-center">
-                            {film.title}
-                            <Link to={`/films/${film.id}`} className="btn btn-primary">See Film Details</Link>
-                        </li>
-                    ))}
-                </ul>
+                    <ul className="list-group">
+                        {films.map(film => (
+                            <li 
+                            key={`user-item-${film.id}`}
+                            className="list-group-item d-flex justify-content-between align-items-center"
+                            >
+                                {film.title}
+                                
+                                <Link 
+                                    to={`/films/${film.id}`} 
+                                    className="btn btn-primary">See Film Details
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="col-md-3"></div>
             </section>
         </main>
     );
