@@ -36,7 +36,8 @@ const App = () => {
             <div className="site-links text-center mb-3">
                 <Link to={"/"}> Go Home </Link>  |
                 <Link to={"/films"}> View Films </Link>  |
-                <Link to={"/people"}> View People </Link>
+                <Link to={"/people"}> View People </Link>  |
+                <Link to={"/vehicles"}> View Cars </Link>
             </div>
         </BrowserRouter>
     );
