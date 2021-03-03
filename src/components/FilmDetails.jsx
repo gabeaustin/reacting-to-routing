@@ -16,13 +16,13 @@ const FilmDetails = () => {
     return (
         <main className="container">
             <section className="row mt-5 mb-5">
-                <div className="col-md-4">
+                <div className="col-md-3">
                     <button type="button" class="btn btn-default btn-sm">
                         <Link to="/films" className="card-link">Go Back</Link>
                     </button>
                 </div>
 
-                <div className="col-md-4">
+                <div className="col-md-6">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">{film?.title}</h5>
@@ -47,7 +47,7 @@ const FilmDetails = () => {
                     </div>
                 </div>
 
-                <div className="col-md-4"></div>
+                <div className="col-md-3"></div>
             </section>
         </main>
 
